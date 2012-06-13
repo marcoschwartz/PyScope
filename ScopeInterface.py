@@ -62,7 +62,7 @@ class ScopeInterface:
 			data = data[10:]
 		 
 		# Generate time axis
-		time = np.arange(-300.0/50*timescale, 300.0/50*timescale, timescale/50.0)
+		time = np.arange(0, 600.0/50*timescale, timescale/50.0)
 		 
 		# If we generated too many points, crop the length of time.
 		if (time.size > data.size):

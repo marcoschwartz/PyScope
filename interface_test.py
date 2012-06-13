@@ -22,7 +22,7 @@ start_time = time.time()
 t, voltage = scopi.getScopeValue(1)
 
 # Get max 
-print "Max :",scopi.getMean(1),"V"
+print "Max :",scopi.getMax(1),"V"
 
 # Get min 
 print "Min :",scopi.getMin(1),"V"
@@ -34,4 +34,6 @@ print "Acquisition done in",time.time() - start_time,"s"
 
 # Plot
 pylab.plot(t,voltage)
+pylab.xlabel("Time [s]")
+pylab.ylabel("Voltage [V]")
 pylab.show()
