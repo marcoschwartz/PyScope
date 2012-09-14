@@ -1,3 +1,15 @@
+###########################################################################################
+#
+#         Low-level Python interface for Rigol scopes
+#
+# Author          :   Marc-Olivier Schwartz
+# E-Mail          :   marcolivier.schwartz@gmail.com
+#
+# Based on ' Controlling a Rigol oscilloscope using Linux and Python' by Matt Mets
+# http://www.cibomahto.com/2010/04/controlling-a-rigol-oscilloscope-using-linux-and-python/
+#
+###########################################################################################
+
 import os
  
 class usbtmc:
